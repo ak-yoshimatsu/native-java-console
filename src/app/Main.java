@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        UserService userService = new UserServiceImpl();
+//        UserService userService = new UserServiceImpl();
+        UserService userService = new UserServiceFilesystemImpl();
 
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {
